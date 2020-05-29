@@ -1,10 +1,25 @@
 #include <iostream>
 #include <string>
 
+
+class Vehicle
+{
+int m_spd;
+int m_val;
+
+void print()
+{
+std::cout<<"this car costs: "<<m_val<<'\n';
+}
+
+};
+
+
 int main()
 {
-
-
+Vehicle mercBenz{500,0};
+mercBenz.m_val=mercBenz.m_spd*100;
+mercBenz.print();
 
 return 0;
 }
